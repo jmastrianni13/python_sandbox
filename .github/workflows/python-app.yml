@@ -37,3 +37,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Install tox and deps
+      run: pip install coverage/tox
+    - name: Run tox
+      run: coverage/tox -e py
+
