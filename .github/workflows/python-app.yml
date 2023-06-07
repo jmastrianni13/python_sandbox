@@ -40,5 +40,5 @@ jobs:
     - name: Install tox and deps
       run: pip install tox
     - name: Run tox
-      run: coverage/tox -e py
+      run: tox -e py
 
