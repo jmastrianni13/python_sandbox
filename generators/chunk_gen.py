@@ -5,11 +5,9 @@ def gen_ints(n):
         yield i
 
 def gen_chunk(gen, size):
-    curr = 0
-    while curr < size:
+    for _ in range(size):
         try:
             yield next(gen)
-            curr += 1
         except StopIteration:
             return
 
